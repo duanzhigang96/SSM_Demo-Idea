@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="css/public_head.css" />
+    <link rel="stylesheet" href="css/EnterpriseDetail.css" />
+    <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/js/phone.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $.ajax({
+                type:"post",
+                dataType: "json",
+                url:"/findEnterprise",
+                Menu_data:{
+                    enterpriseId:"1"
+                },
+                success:function(Menu_data) {
+                    var html = "";
+                    for (var i = 0;i<Menu_data.length;i++) {
+                        html += '<li><div>';
+                        html += Menu_data[i].title;
+                        html+="</div></li>";
+                    }
+                    $("#list").html(html);
+
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+<!--head_line-->
+<div class="head_line">
+    <!--<span class="head_left"><a href="#"><img src="images/back_ico.png"></a></span>-->
+    <p class="head_line_p" th:text="${username}">
+
+    </p>
+    <!--<span class="head_right"><a href="#"><img src="images/add_ico.png"></a></span>-->
+</div>
+<div class="new_top">
+    <div class="box">
+        <ul id = "list">
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>

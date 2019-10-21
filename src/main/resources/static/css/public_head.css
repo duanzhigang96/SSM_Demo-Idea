@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:"苹方 中等", 'Arial', 'san-serif'; 
+	color:#323232;
+	font-size:0.24rem;
+	margin:0;
+	padding:0;
+	background-color:#fff;
+}
+ul, li{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+a{text-decoration:none}
+
+/*head_line*/
+.head_line {
+	background: #ffffff;
+	width: 92%;
+	height: 0.58rem;
+	line-height: 0.58rem;
+	padding: 0.15rem 4%;
+	vertical-align: middle;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:100;
+	border-bottom: 1px solid #d9d9d9;
+}
+.head_left {
+	float: left;
+	vertical-align: middle;
+	height: 0.58rem;
+	line-height: 0.58rem;
+}
+.head_left img {
+	width: 0.36rem;
+	height: 0.58rem;
+	vertical-align: middle;
+}
+
+.head_right{
+	float: right;
+	vertical-align: middle;
+	height: 0.58rem;
+	line-height: 0.58rem;
+}
+.head_right img {
+	width: 0.36rem;
+	height: 0.58rem;
+	vertical-align: middle;
+}
+
+.head_line_p {
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	text-align: center;
+	width: 50%;
+	font-size: 0.3rem;
+	position: absolute;
+	margin-left: -25%;
+	left: 50%;
+}

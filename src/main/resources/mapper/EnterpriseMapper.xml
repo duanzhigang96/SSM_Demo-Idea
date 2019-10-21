@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mapper.EnterpriseMapper" >
+  <resultMap id="BaseResultMap" type="com.example.pojo.Enterprise" >
+    <result column="enterpriseId" property="enterpriseid" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    enterpriseId, title, status
+  </sql>
+  <insert id="insert" parameterType="com.example.pojo.Enterprise" >
+    insert into enterprise (enterpriseId, title, status
+      )
+    values (#{enterpriseid,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.pojo.Enterprise" >
+    insert into enterprise
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="enterpriseid != null" >
+        enterpriseId,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="enterpriseid != null" >
+        #{enterpriseid,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="findEnterprise" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from enterprise
+    where enterpriseId = #{enterpriseId,jdbcType=VARCHAR}
+  </select>
+</mapper>

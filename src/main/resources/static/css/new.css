@@ -1,0 +1,253 @@
+/*new_index*/
+.new_index{
+	margin-top: 0.88rem;
+	float: left;
+	width: 100%;
+}
+.wd_title{
+	width: 150;
+	display:inline-block
+	float: left;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	font-size: 0.25rem;
+}
+.wd_desc{
+	margin:0.5rem 0;
+	font-size: 0.25rem;
+	color: #129ce3;
+	line-height: 0.78rem;
+	text-align: center;
+}
+
+.wd_title img{
+	vertical-align: middle;
+	width: 0.44rem;
+	height: 0.44rem;
+	margin-right: 0.24rem;
+}
+
+/*wd_index*/
+.wd_index{
+	padding: 0.2rem 4%;
+	width: 92%;
+	float: left;
+}
+.wd_line{
+	width: 100%;
+	margin-bottom: 0.22rem;
+	float:left;
+	
+}
+.wd_line img{
+	width: 0.35rem;
+	height: 0.35rem;
+	float: left;
+	margin:0.045rem 0;
+	
+}
+.line_input{
+	float: right;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	border: 1px solid #e0e0e0;
+	outline: none;
+	padding: 0 2%;
+	width: 70%;
+	font-size: 0.24rem;
+	margin-left: 0.2rem;
+}
+
+.line_textarea{
+	float: right;
+	min-height: 0.6rem;
+	border: 1px solid #e0e0e0;
+	outline: none;
+	padding: 1% 2%;
+	width: 88%;
+	font-size: 0.24rem;
+	resize: none;
+	font-family: "苹方 中等";
+}
+
+/*qy_index*/
+.qy_index{
+	width: 100%;
+	float: left;
+}
+.check_line{
+	width: 100%;
+	float: left;
+	margin-bottom: 0.24rem;
+}
+.check_line img{
+	width: 0.35rem;
+	height: 0.35rem;
+	vertical-align: middle;
+	margin-bottom: 0.04rem;
+	float: left;
+}
+.check_line label{
+	padding: 0 0.2rem;
+	font-size: 0.28rem;
+	float: left;
+}
+.check_line font{
+	padding: 0 0.2rem;
+	font-size: 0.28rem;
+	float: left;
+}
+
+/*checkbox*/
+
+.radioclass_big {
+opacity: 0;
+cursor: pointer;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+width: 0.3rem;
+height: 0.3rem;
+position: absolute;
+left: 50%;
+margin-left: -0.15rem;
+top: 50%;
+margin-top: -0.15rem;
+}
+
+.radioclass_small {
+opacity: 0;
+cursor: pointer;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+width: 0.24rem;
+height: 0.24rem;
+position: absolute;
+left: 50%;
+margin-left: -0.12rem;
+top: 50%;
+margin-top: -0.12rem;
+}
+
+.big_piaochecked {
+width:0.3rem;
+height:0.3rem;
+float: left;
+cursor: pointer;
+margin-right:0.1rem;
+text-align: center;
+background-image:url(../images/big_check_1.png);
+background-size:0.3rem 0.3rem;
+background-repeat: no-repeat;
+margin: 0.025rem 0;
+position: relative;
+}
+.on_check_big {
+background-image:url(../images/big_check_2.png);
+background-size:0.3rem 0.3rem;
+margin: 0.025rem 0;
+position: relative;
+}
+
+.piaochecked {
+width:0.24rem;
+height:0.24rem;
+float: left;
+cursor: pointer;
+margin-right:0.1rem;
+text-align: center;
+background-image:url(../images/circle_ico_1.png);
+background-size:0.24rem 0.24rem;
+background-repeat: no-repeat;
+position: relative;
+}
+.on_check{
+background-image:url(../images/circle_ico_2.png);
+background-size:0.24rem 0.24rem;
+position: relative;
+}
+
+
+#check_show{
+	display: none;
+	padding: 0 4%;
+	width: 92%;
+}
+
+.check_table{
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+}
+.check_table td{
+	padding: 0.13rem 0;
+}
+
+.check_table td label{
+	float: left;
+	line-height: 0.24rem;
+}
+
+.images_save{
+	padding: 0 4%;
+	width: 92%;
+}
+
+.img_square{
+	float: left;
+	width: 1.32rem;
+	height: 1.32rem;
+	margin-right: 0.25rem;
+}
+.img_square img{
+	width: 1.32rem;
+	height: 1.32rem;
+}
+
+.btn_line{
+	margin: 0.25rem 0;
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+
+.bottom_btn{
+	background: #129ce3;
+	width: 2.0rem;
+	height: 0.51rem;
+	line-height: 0.5rem;
+	color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 0.25rem;
+	font-size: 0.23rem;
+	cursor: pointer;
+}
+box{
+      margin: 0.25rem 0;
+      display: inline-block;
+      background: #ff000026;
+    }
+    ul{
+      overflow: hidden;
+      width: 100%;
+      margin-bottom: -10px;
+      margin-top: 0;
+      background: none;
+    }
+    li{
+      list-style: none;
+      float: left;
+      width: 25%;/*可以用百分比*/
+      height: 25vw;/*可以用百分比*/
+      /* margin-bottom: 10px; */
+
+//      border: 1px solid red;
+    }
+    li  > div{
+      background:#129ce3;
+      margin: 0 0.5vw;
+	  margin-top: 0.05vw;
+      border-radius: 8px;
+      text-align: center;
+      line-height: 24vw;
+    }
